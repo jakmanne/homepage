@@ -9,17 +9,14 @@
     "email": "jakmanne at gmail dot com",
     "phone": "555-555-5555",
     "address":{
-      "street":"(Your Street)",
-      "city":"Bergen",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "city":"Bergen"
     },
     "website": "https://www.jakobmanne.no",
-    "resumedownload":"http://timbakerdev.com",
+    "resumedownload":"https://www.jakobmanne.no",
     "social":[
       {
         "name":"facebook",
-        "url":"http://facebook.com/tim.baker.906",
+        "url":"https://www.facebook.com/jakob.manne",
         "className":"fa fa-facebook"
       },
       {
@@ -35,97 +32,101 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of Oslo",
+        "degree":"Masters in Innovation and Entrepreneurship",
+        "graduated":"June 2020",
+        "description":"One exchange semester at Rice University, Houston, USA via Grunderskolen. Title of my master thesis was, What characterizes companies that implement cross-industry innovation?"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Western Norway University of Applied Sciences",
+        "degree":"Bachelor in Computer Science",
+        "graduated":"June 2017",
+        "description":"Awards at the Department of Computing, Mathematics and Physics: Award for best bachelor project report. Project topic was “Digital Healthcare Forms”.  Social environment award for contributing to creating a good social environment at the department. "
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
+        "company":"Cutters",
+        "title":"Fullstack Business Developer",
+        "years":"March 2020 - Present",
         "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
+        "company":"Bouvet",
+        "title":"Software Developer",
+        "years":"August 2019 - March 2020",
+        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company":"Equinor",
+        "title":"Software Development Intern",
+        "years":"August 2019 - March 2020",
+        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company":"Sbanken",
+        "title":"Junior Software Developer",
+        "years":"August 2019 - March 2020",
         "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       }
     ],
     "skills":[
       {
-        "name":"Git",
-        "level":"60%"
-      },
-      {
-        "name":"Illustrator",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
+        "name":"C#/.NET",
         "level":"80%"
       },
       {
-        "name":"VueJs",
-        "level":"50%"
+        "name":"Microservices",
+        "level":"80%"
+      },
+      {
+        "name":"React",
+        "level":"80%"
       },
       {
         "name":"MongoDB",
+        "level":"70%"
+      },
+      {
+        "name":"SQL",
+        "level":"70%"
+      },
+      {
+        "name":"Google Cloud Platform",
+        "level":"30%"
+      },
+      {
+        "name":"Terraform",
+        "level": "30%"
+      },
+      {
+        "name":"K8s",
+        "level": "30%"
+      },
+      {
+        "name":"Git",
+        "level":"90%"
+      },
+      {
+        "name":"React",
         "level":"80%"
+      },
+      {
+        "name":"MongoDB",
+        "level":"70%"
       }
     ]
   },
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "title":"First blog post",
+        "category":"My first blog post..",
+        "image":"soon.jpg",
+        "url":"https://www.medium.com"
       }
     ]
   },
