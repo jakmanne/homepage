@@ -4,7 +4,7 @@
     "occupation":"Fullstack Business Developer",
     "description":"I am currently working for Cutters, the fastest growing hairdresser firm in the Nordics.",
     "image":"profilepic.jpg",
-    "bio":"Hi, I am a software developer who enjoys being part of the entire value chain from idea to production. Currently, I am working at Cutters, where our goal is to digitalize and automate all manuall tasks except the haircut. As one of two software developers in company, I am involved in everything from developing new features to supporting the entire value chain in the company. I have experience working in large enterprises as well as startups and on my free time I enjoy trying out new technologies. I have a goal of starting to write blog articles on Medium in 2020, so follow along :D",        
+    "bio":"Hi, I am a software developer who enjoys being part of the entire value chain from idea to production. Currently, I am working at Cutters, where our goal is to digitalize and automate all manuall tasks except the haircut. As one of two software developers in company, I am involved in everything from developing new features to supporting the entire value chain in the company. I have experience working in large enterprises as well as startups and on my free time I enjoy trying out new technologies. I have a goal of starting to write blog articles on Medium in 2021, so follow along :D",        
     "contactmessage":"If you would like to contact me, please reach out by email.",
     "email": "jakmanne at gmail dot com",
     "phone": "555-555-5555",
@@ -15,11 +15,6 @@
     "resumedownload":"https://www.jakobmanne.no",
     "social":[
       {
-        "name":"facebook",
-        "url":"https://www.facebook.com/jakob.manne",
-        "className":"fa fa-facebook"
-      },
-      {
         "name":"linkedin",
         "url":"https://no.linkedin.com/in/jakob-halsteinslid-manne-44319912a",
         "className":"fa fa-linkedin"
@@ -28,6 +23,11 @@
         "name":"github",
         "url":"http://github.com/jakmanne",
         "className":"fa fa-github"
+      },
+      {
+        "name":"facebook",
+        "url":"https://www.facebook.com/jakob.manne",
+        "className":"fa fa-facebook"
       }
     ]
   },
@@ -52,25 +52,37 @@
         "company":"Cutters",
         "title":"Fullstack Business Developer",
         "years":"March 2020 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Development of Cutters' technology platform. Working at the intersection of technology, user experience and business development. I'm a key person in the technical development of the company where I am involved in the whole process from idea to delivery."
       },
       {
         "company":"Bouvet",
         "title":"Software Developer",
         "years":"August 2019 - March 2020",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Hired as an external consultant to a major oil & gas company. Further development of a planning tool for drilling oil wells. Used WCF, Sencha, SQL."
       },
       {
         "company":"Equinor",
         "title":"Software Development Intern",
-        "years":"August 2019 - March 2020",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "years":"September 2018 - November 2018",
+        "description":"Further development of a library that is used to process seismic data. Built a .NET Standard wrapper on top of a library written in C."
       },
       {
         "company":"Sbanken",
         "title":"Junior Software Developer",
-        "years":"August 2019 - March 2020",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "years":"June 2017 - Oktober 2018",
+        "description":"Working parttime besides my master studies. Worked in several areas such as payments, concept development, and everyday banking. Used C#/.NET stack as well as React."
+      },
+      {
+        "company":"GOOSE Society of Texas",
+        "title":"Intern",
+        "years":"May 2018 - June 2018",
+        "description":"Branding, webpage development, marketing of GOOSE Society of Texas, a super angel investment group."
+      },
+      {
+        "company":"Knomatic",
+        "title":"Intern",
+        "years":"March 2018 - May 2018",
+        "description":"Product management and configuration of solutions for automation and digitization of manual work processes."
       }
     ],
     "skills":[
