@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import ReactGA from 'react-ga';
-import $ from 'jquery';
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import About from './Components/About';
 import Resume from './Components/Resume';
-import Contact from './Components/Contact';
-import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
 class App extends Component {
@@ -21,13 +18,19 @@ class App extends Component {
 
     ReactGA.initialize('UA-91431679-1');
     ReactGA.pageview(window.location.pathname);
-
   }
 
-  getResumeData(){
+  getResumeData() {
+    const axios = require('axios');
 
-    let data = require('./resumeData.json');
-    this.setState({resumeData: data});
+    axios.get('https://raw.githubusercontent.com/jakmanne/resumecontent/master/resumeData.json')
+      .then(response => {
+        this.setState({ resumeData: response.data });
+      })
+      .catch(error => {
+        let data = require('./resumeData.json');
+        this.setState({ resumeData: data });
+      });
   }
 
   componentDidMount(){
