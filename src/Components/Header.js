@@ -128,11 +128,6 @@ function Header({ data }) {
             </a>
           </li>
           <li>
-            <a className="smoothscroll" href="#portfolio">
-              Blog
-            </a>
-          </li>
-          <li>
             <a className="smoothscroll" href="#resume">
               Work
             </a>

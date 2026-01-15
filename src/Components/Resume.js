@@ -3,7 +3,7 @@ import React from 'react';
 function Resume({ data }) {
   if (!data) return null;
 
-  const { skillmessage, education, work, skills } = data;
+  const { education, work } = data;
 
   const educationItems = education.map((edu) => (
     <div key={edu.school}>
@@ -27,16 +27,6 @@ function Resume({ data }) {
     </div>
   ));
 
-  const skillItems = skills.map((skill) => {
-    const className = `bar-expand ${skill.name.toLowerCase()}`;
-    return (
-      <li key={skill.name}>
-        <span style={{ width: skill.level }} className={className}></span>
-        <em>{skill.name}</em>
-      </li>
-    );
-  });
-
   return (
     <section id="resume">
       <div className="row work">
@@ -59,22 +49,6 @@ function Resume({ data }) {
         <div className="nine columns main-col">
           <div className="row item">
             <div className="twelve columns">{educationItems}</div>
-          </div>
-        </div>
-      </div>
-
-      <div className="row skill">
-        <div className="three columns header-col">
-          <h1>
-            <span>Skills</span>
-          </h1>
-        </div>
-
-        <div className="nine columns main-col">
-          <p>{skillmessage}</p>
-
-          <div className="bars">
-            <ul className="skills">{skillItems}</ul>
           </div>
         </div>
       </div>
