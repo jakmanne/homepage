@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Resume({ data }) {
+  const [viewMode, setViewMode] = useState('list');
+
   if (!data) return null;
 
   const { education, work } = data;
@@ -16,7 +18,7 @@ function Resume({ data }) {
     </div>
   ));
 
-  const workItems = work.map((job) => (
+  const workItemsList = work.map((job) => (
     <div key={job.company}>
       <h3>{job.company}</h3>
       <p className="info">
@@ -27,6 +29,17 @@ function Resume({ data }) {
     </div>
   ));
 
+  const workItemsTimeline = work.map((job, index) => (
+    <div key={job.company} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+      <div className="timeline-content">
+        <span className="timeline-date">{job.years}</span>
+        <h3>{job.company}</h3>
+        <h4>{job.title}</h4>
+        <p>{job.description}</p>
+      </div>
+    </div>
+  ));
+
   return (
     <section id="resume">
       <div className="row work">
@@ -34,9 +47,34 @@ function Resume({ data }) {
           <h1>
             <span>Work</span>
           </h1>
+          <div className="view-toggle">
+            <button
+              className={`toggle-btn ${viewMode === 'list' ? 'active' : ''}`}
+              onClick={() => setViewMode('list')}
+              title="List View"
+            >
+              <i className="fa fa-list"></i>
+            </button>
+            <button
+              className={`toggle-btn ${viewMode === 'timeline' ? 'active' : ''}`}
+              onClick={() => setViewMode('timeline')}
+              title="Timeline View"
+            >
+              <i className="fa fa-clock-o"></i>
+            </button>
+          </div>
         </div>
 
-        <div className="nine columns main-col">{workItems}</div>
+        <div className="nine columns main-col">
+          {viewMode === 'list' ? (
+            workItemsList
+          ) : (
+            <div className="timeline">
+              <div className="timeline-line"></div>
+              {workItemsTimeline}
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="row education">

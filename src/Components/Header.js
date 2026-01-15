@@ -1,8 +1,10 @@
-import React, { useEffect, useRef, useCallback } from 'react';
+import React, { useEffect, useRef, useCallback, useState } from 'react';
 
 function Header({ data }) {
   const headerRef = useRef(null);
   const navRef = useRef(null);
+  const [displayedText, setDisplayedText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
 
   // Smooth scroll handler
   const handleSmoothScroll = useCallback((e) => {
@@ -95,9 +97,31 @@ function Header({ data }) {
     };
   }, [handleSmoothScroll]);
 
+  // Typing animation for occupation
+  useEffect(() => {
+    if (!data?.occupation) return;
+
+    const text = data.occupation;
+    let index = 0;
+    setDisplayedText('');
+    setIsTyping(true);
+
+    const typeInterval = setInterval(() => {
+      if (index < text.length) {
+        setDisplayedText(text.substring(0, index + 1));
+        index++;
+      } else {
+        setIsTyping(false);
+        clearInterval(typeInterval);
+      }
+    }, 100);
+
+    return () => clearInterval(typeInterval);
+  }, [data?.occupation]);
+
   if (!data) return null;
 
-  const { name, occupation, description, address, social } = data;
+  const { name, description, address, social } = data;
   const networks = social.map((network) => (
     <li key={network.name}>
       <a href={network.url}>
@@ -139,7 +163,8 @@ function Header({ data }) {
         <div className="banner-text">
           <h1 className="responsive-headline">I'm {name}.</h1>
           <h3>
-            I'm a {address.city} based <span>{occupation}</span>. {description}.
+            I'm a {address.city} based <span className="typing-text">{displayedText}</span>
+            <span className={`typing-cursor ${!isTyping ? 'blink' : ''}`}>|</span>. {description}.
           </h3>
           <hr />
           <ul className="social">{networks}</ul>

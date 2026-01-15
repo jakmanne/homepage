@@ -17,20 +17,6 @@ function Footer({ data }) {
         <div className="twelve columns">
           <ul className="social-links">{networks}</ul>
 
-          <ul className="copyright">
-            <li>
-              Page forked from Tim Baker{' '}
-              <a title="github" href="https://github.com/tbakerx">
-                Github
-              </a>
-            </li>
-            <li>
-              Design by{' '}
-              <a title="Styleshout" href="http://www.styleshout.com/">
-                Styleshout
-              </a>
-            </li>
-          </ul>
         </div>
         <div id="go-top">
           <a className="smoothscroll" title="Back to Top" href="#home">
